@@ -1,2 +1,2 @@
 # Behre_Infrastructure
-![Alt text](relative/path/to/img.jpg?raw=true "Title")
+![Alt text](frontend/views/icon.png?raw=true "Title")
