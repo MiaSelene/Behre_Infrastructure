@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 var exphbs = require('express-handlebars');
 
+function Logoclick(){
+  console.log('this dude be clicking');
+}
 app.use('/static', express.static('public'));
 
 app.engine('handlebars', exphbs({defaultLayout: 'main'}));
