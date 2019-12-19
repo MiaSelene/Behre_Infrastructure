@@ -1,0 +1,35 @@
+#party {
+  position:fixed;
+  left: 9%;
+  top: 6em;
+  height: 40%;
+  width: 40%;
+  margin: auto;
+}
+
+#reading {
+  position:fixed;
+  left: 51%;
+  top: 6em;
+  height: 40%;
+  width: 40%;
+  margin: auto;
+}
+
+#art {
+  position:fixed;
+  left: 9%;
+  top: 55%;
+  height: 40%;
+  width: 40%;
+  margin: auto;
+}
+
+#group {
+  position:fixed;
+  left: 51%;
+  top: 55%;
+  height: 40%;
+  width: 40%;
+  margin: auto;
+}
