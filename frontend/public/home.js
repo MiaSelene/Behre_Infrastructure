@@ -16,5 +16,5 @@ function CreateCell(Event, name, people, price, date){
   row.insertCell(1).innerHTML = name;
   row.insertCell(2).innerHTML = people;
   row.insertCell(3).innerHTML = price;
-  row.insertCell(4).innerHTML = `${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()}  ${date.getHours()}:${date.getMinutes()}`;
+  row.insertCell(4).innerHTML = `${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()}`;
 }

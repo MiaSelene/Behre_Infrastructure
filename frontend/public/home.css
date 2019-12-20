@@ -4,7 +4,17 @@ table {
   left: 5%;
   top: 6em;
   width: 90%;
-  font-size: 1em;
-  line-height: 1.1em;
+  font-size: 2em;
+  line-height: 3em;
   border-collapse: collapse;
+}
+
+#settingslink {
+  cursor: pointer;
+  position:absolute;
+  left: calc(100% - 4em);
+  top: 0px;
+  width: 4em;
+  height: 4em;
+  z-index: 999;
 }
