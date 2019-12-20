@@ -12,10 +12,9 @@ function SetInterest(interest){
 function InterestedIn(Event){
   if(localStorage[Event]=="true"){
     return "true";
-  }
-  return "false";
+  } return "false";
 }
 
 function GetEvents(){
-  return [{ID:1, name:"(B)Ehre Eroeffnung", people:10, price:200, date:new Date("2019-12-24")}, {ID:2, name:"Sylvester St\'Austellung", people:5, price:15, date:new Date("2019-12-30")}];
+  return [{ID:1, name:"(B)Ehre Eroeffnung", people:10, price:200, date:new Date("2019-12-24")}, {ID:3, name:"Sylvester St\'Austellung", people:5, price:15, date:new Date("2019-12-30")}];
 }

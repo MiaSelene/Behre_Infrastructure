@@ -1,20 +1,10 @@
-#calendar {
-  position:absolute;
-  left: calc((100vw - 88vh)/2);
-  top: 6em;
-  height: 40vh;
-  width: 40vh;
-  margin: auto;
-  font-size: 10em;
-}
-
 table {
   background-color: darkgrey;
   position:absolute;
-  left: calc((100vw - 88vh)/2);
+  left: 5%;
   top: 6em;
-  height: 40vh;
-  width: 40vh;
-  font-size: 3em;
+  width: 90%;
+  font-size: 1em;
+  line-height: 1.1em;
   border-collapse: collapse;
 }

@@ -1,13 +1,20 @@
-var inputElement = document.getElementById("calendar");
 var cal = GetEvents()
-var content = "";
 for (var i=0; i<cal.length; i++){
-  var Event = ["party","reading","art","group"][cal.ID];
+  var Event = ["party","reading","art","group"][parseInt(cal[i].ID)-1];
+  var content = cal[i]
   if (InterestedIn(Event)=="true"){
-    content += cal[i].name
+    CreateCell(Event, content["name"], content["people"], content["price"], content["date"] );
+
   }
 }
-inputElement.innerHTML = content;
 
 
-function CreateCell(Event, name, people, prize, date)
+function CreateCell(Event, name, people, price, date){
+  var table = document.getElementById("calendar");
+  var row = table.insertRow(0);
+  row.insertCell(0).innerHTML = Event;
+  row.insertCell(1).innerHTML = name;
+  row.insertCell(2).innerHTML = people;
+  row.insertCell(3).innerHTML = price;
+  row.insertCell(4).innerHTML = `${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()}  ${date.getHours()}:${date.getMinutes()}`;
+}

@@ -23,7 +23,6 @@ function createButton(id){
   var inputElement = document.getElementById(id);
   inputElement.type = "button"
   inputElement.onclick = async function(){
-    console.log('.');
       if (SetInterest(id)=="true"){
         inputElement.src = "/static/Eventtypes/" + id + "_active.jpeg";
       } else {
