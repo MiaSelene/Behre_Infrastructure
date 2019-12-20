@@ -2,8 +2,9 @@
   img {
     cursor: pointer;
   }
+
   #party {
-    position:fixed;
+    position:absolute;
     left: calc((100vw - 88vh)/2);
     top: 6em;
     height: 40vh;
@@ -12,7 +13,7 @@
   }
 
   #reading {
-    position:fixed;
+    position:absolute;
     left: calc(100vw - 40vh - (100vw - 88vh)/2);
     top: 6em;
     height: 40vh;
@@ -21,7 +22,7 @@
   }
 
   #art {
-    position:fixed;
+    position:absolute;
     left: calc((100vw - 88vh)/2);;
     top: calc(44vh + 6em);
     height: 40vh;
@@ -30,7 +31,7 @@
   }
 
   #group {
-    position:fixed;
+    position:absolute;
     left: calc(100vw - 40vh - (100vw - 88vh)/2);
     top: calc(44vh + 6em);
     height: 40vh;
@@ -47,7 +48,7 @@
 
 @media all and (orientation:portrait) {
   #party {
-    position:fixed;
+    position:relative;
     left: 9vw;
     top: 6em;
     height: 40vw;
@@ -56,7 +57,7 @@
   }
 
   #reading {
-    position:fixed;
+    position:relative;
     left: 51vw;
     top: 6em;
     height: 40vw;
@@ -65,7 +66,7 @@
   }
 
   #art {
-    position:fixed;
+    position:relative;
     left: 9vw;
     top: 55vw;
     height: 40vw;
@@ -74,7 +75,7 @@
   }
 
   #group {
-    position:fixed;
+    position:relative;
     left: 51vw;
     top: 55vw;
     height: 40vw;

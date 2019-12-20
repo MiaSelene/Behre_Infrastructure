@@ -1,17 +1,19 @@
 
 function SetInterest(interest){
-  if (localStorage[interest]){
+  if (localStorage[interest]=="true"){
     localStorage[interest] = false;
+    return "false";
   }else{
     localStorage[interest] = true;
+    return "true";
   }
 }
-//Event Types 1: Party; 2: Art; 3: Library; 4: Group activity
-function InterestedIn(EventID){
-  if(localStorage[EventID]){
-    return true;
+
+function InterestedIn(Event){
+  if(localStorage[Event]=="true"){
+    return "true";
   }
-  return false;
+  return "false";
 }
 
 function GetEvents(){
