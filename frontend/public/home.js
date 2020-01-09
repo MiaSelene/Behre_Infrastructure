@@ -7,7 +7,10 @@ for (var i=0; i<cal.length; i++){
 
   }
 }
-
+function changeScore(){
+  var score = document.getElementById('pointscore');
+  score.innerHTML = 1 + parseInt(score.innerHTML);
+}
 
 function CreateCell(Event, name, people, price, date){
   var table = document.getElementById("calendar");
