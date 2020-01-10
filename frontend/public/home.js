@@ -7,11 +7,20 @@ for (var i=0; i<cal.length; i++){
 
   }
 }
-function changeScore(){
+function changeScore(i){
   var score = document.getElementById('pointscore');
-  score.innerHTML = 1 + parseInt(score.innerHTML);
+  score.innerHTML = i + parseInt(localStorage["Score"]);
+  localStorage["Score"]=score.innerHTML;
 }
+function changeEventVisibility(){
+  if(document.getElementById("Event").style.display=="block"){
+    document.getElementById("Event").style.display="none";
+  }else{
+    document.getElementById("Event").innerHTML=document.getElementById("recommendedevent").innerHTML;
+    document.getElementById("Event").style.display="block";
+  }
 
+}
 function CreateCell(Event, name, people, price, date){
   var table = document.getElementById("calendar");
   var row = table.insertRow(0);
@@ -20,4 +29,9 @@ function CreateCell(Event, name, people, price, date){
   row.insertCell(2).innerHTML = people;
   row.insertCell(3).innerHTML = price;
   row.insertCell(4).innerHTML = `${date.getDate()}.${date.getMonth()+1}.${date.getFullYear()}`;
+  row.addEventListener("click", function() {
+    document.getElementById("recommendedevent").innerHTML=name;
+
+  })
 }
+changeScore(0);

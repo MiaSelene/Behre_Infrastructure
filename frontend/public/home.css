@@ -17,6 +17,18 @@ table {
   height: 35%;
   border-collapse: collapse;
 }
+#Event{
+  display: none;
+  background-color: green;
+  position:absolute;
+  left: 4%;
+  top: 4%;
+  width: 92%;
+  height: 92%;
+  font-size: 8em;
+  z-index: 999;
+  border-collapse: collapse;
+}
 #pointscore {
   color: lightgrey;
   position:absolute;
