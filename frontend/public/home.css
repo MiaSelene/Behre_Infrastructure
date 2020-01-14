@@ -21,6 +21,7 @@ table {
   border-collapse: collapse;
 }
 #Event{
+  font-size: 10em;
   text-align: center;
   cursor: pointer;
   opacity: 0;
@@ -35,7 +36,6 @@ table {
   transition: all 334ms;
 }
 .anim{
-  font-size: 10em;
   opacity: 1 !important;
   width: 75% !important;
   height: 75% !important;
