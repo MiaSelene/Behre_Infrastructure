@@ -20,6 +20,7 @@ function changeScore(i){
 
 function changeEventVisibility(){
   if(document.getElementById("Event").classList.contains("anim")){
+      document.getElementById("Event").innerHTML="";
       document.getElementById("Event").classList.remove("anim");
   }else{
     document.getElementById("Event").innerHTML=document.getElementById("recommendedevent").innerHTML;
